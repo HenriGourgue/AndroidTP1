@@ -8,4 +8,6 @@
     <string name="notificationsDescriptor">Notifications</string>
     <string name="dashboardDescriptor">Dashboard</string>
     <string name="clockDescriptor">Time</string>
+    <string name="theme">Theme</string>
+    <string name="share">Share this app</string>
 </resources>
