@@ -1,5 +1,6 @@
 package com.example.tp1
 
+import android.content.Intent
 import androidx.appcompat.app.AppCompatActivity
 import android.os.Bundle
 import android.widget.Button
@@ -22,6 +23,11 @@ class MainActivity : AppCompatActivity() {
                 println("Veuillez renseigner les informations nécessaires.")
             } else {
                 println(name + "|" + following + "|" + follower)
+                val intent = Intent(this, Main2Activity::class.java)
+                intent.putExtra("name", name)
+                intent.putExtra("following", following)
+                intent.putExtra("follower", follower)
+                startActivity(intent)
             }
         }
     }
